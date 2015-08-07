@@ -237,10 +237,11 @@ $("input[type=submit]").click(function(event){
         if(password.length > 0) {
     alert('you signed up. Thanks!');
 
-                        myFirebaseRef.set({
+                        myFirebaseRef.push({
                             title: email,
                             author: password,
                         });
+                        
 
 
         }
