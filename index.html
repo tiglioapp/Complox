@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Complox.cc</title>
+
+
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<!-- <link rel="stylesheet" href="style.css"> -->
+
+<style>
+/*SITE STYLING*/
+html{
+    background:#4EC094;
+    font-family: 'Lato', sans-serif;
+    color:white;
+}
+#myform input[type="password"],#myform input[type="text"]{
+        background:transparent;
+    border: 2px solid #46AC84;
+color: #777;
+font-family: "Lato", sans-serif;
+font-size: 14px;
+padding: 9px 5px;
+height: 21px;
+text-indent: 6px;
+-webkit-appearance: none;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+-webkit-transition: border .25s linear, color .25s linear;
+-moz-transition: border .25s linear, color .25s linear;
+-o-transition: border .25s linear, color .25s linear;
+transition: border .25s linear, color .25s linear;
+-webkit-backface-visibility: hidden;
+width:100%;
+}
+#myform input[type="password"]:focus,#myform input[type="text"]:focus{
+outline:0;
+}
+#myform{
+width: 500px;
+margin: 0 auto;
+position: relative;
+margin-bottom:60px;
+}
+.strength_meter{
+position: absolute;
+left: 0px;
+top: 0px;
+width: 100%;
+height: 43px;
+z-index:-1;
+border-radius:5px;
+padding-right:13px;
+}
+.button_strength {
+text-decoration: none;
+color: #FFF;
+font-size: 13px;
+}
+.strength_meter div{
+    width:0%;
+height: 43px;
+text-align: right;
+color: #000;
+line-height: 43px;
+-webkit-transition: all .3s ease-in-out;
+-moz-transition: all .3s ease-in-out;
+-o-transition: all .3s ease-in-out;
+-ms-transition: all .3s ease-in-out;
+transition: all .3s ease-in-out;
+padding-right: 12px;
+border-radius:5px;
+}
+.strength_meter div p{
+position: absolute;
+top: 22px;
+right: 0px;
+color: #FFF;
+font-size:13px;
+}
+
+.veryweak{
+    background-color: #FFA0A0;
+border-color: #F04040!important;
+width:25%!important;
+}
+.weak{
+background-color: #FFB78C;
+border-color: #FF853C!important;
+width:50%!important;
+}
+.medium{
+background-color: #FFEC8B;
+border-color: #FC0!important;
+width:75%!important;
+}
+.strong{
+background-color: #C3FF88;
+border-color: #8DFF1C!important;
+width:100%!important;
+}
+h1{
+    color:white;
+    font-size:50px;
+    text-align:center;
+    padding-top:30px;
+    margin-bottom:20px;
+}
+h1 span{
+    font-weight:bold;
+    color:white;
+    opacity:.4;
+}
+
+h2{
+    text-align: center;
+    font-weight:lighter;
+    font-size:20px;
+    color: blue;
+    opacity:.7;
+}
+h3{
+    text-align: center;
+    font-weight:lighter;
+    font-size:20px;
+}
+
+.register-button {
+    margin-left: 770px;
+  display: block;
+  width: 40;
+  height: 42px;
+ /* margin-top: px;*/
+  font-size: 16px;
+  font-weight: bold;
+  color: #494d59;
+  text-align: center;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+  background: #fcfcfc;
+  border: 1px solid;
+  border-color: #d8d8d8 #d1d1d1 #c3c3c3;
+  border-radius: 2px;
+  cursor: pointer;
+  background-image: -webkit-linear-gradient(top, #fefefe, #eeeeee);
+  background-image: -moz-linear-gradient(top, #fefefe, #eeeeee);
+  background-image: -o-linear-gradient(top, #fefefe, #eeeeee);
+  background-image: linear-gradient(to bottom, #fefefe, #eeeeee);
+  -webkit-box-shadow: inset 0 -1px rgba(0, 0, 0, 0.03), 0 1px rgba(0, 0, 0, 0.04);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.03), 0 1px rgba(0, 0, 0, 0.04);
+}
+.register-button:active {
+  background: #eee;
+  border-color: #c3c3c3 #d1d1d1 #d8d8d8;
+  background-image: -webkit-linear-gradient(top, #eeeeee, #fcfcfc);
+  background-image: -moz-linear-gradient(top, #eeeeee, #fcfcfc);
+  background-image: -o-linear-gradient(top, #eeeeee, #fcfcfc);
+  background-image: linear-gradient(to bottom, #eeeeee, #fcfcfc);
+  -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.03);
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.03);
+}
+.register-button:focus {
+  outline: 0;
+}
+
+
+</style>
+
+</head>
+
+<body>
+<br><br><br><br>
+
+<h1><span>Complox</span>.cc</h1>
+
+
+    <h2><span>The bridge of events and studying</span> </h2>
+
+    <h3> Sign up now. </h3>
+    <form id="myform" action="" method="get" accept-charset="utf-8">
+
+        <input id="myUsername" type="text"   placeholder="Email Address" name="" value="">
+        
+
+    </form>
+
+
+
+	<form id="myform" action="" method="get"  accept-charset="utf-8">
+
+		<input id="myPassword" type="password"  placeholder="Password" name="" value="">
+		
+
+	</form>
+
+
+    <input type="submit" value="Create Account" class="register-button">
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="strength.js"></script> -->
+<script type="text/javascript" src="js.js"></script>
+
+<script src="https://cdn.firebase.com/js/client/2.2.7/firebase.js"></script>
+
+<script>
+
+
+
+
+$(document).ready(function($) {
+	
+// $('#myPassword').strength({
+//             strengthClass: 'strength',
+//             strengthMeterClass: 'strength_meter',
+//             strengthButtonClass: 'button_strength',
+//             strengthButtonText: 'Show Password',
+//             strengthButtonTextToggle: 'Hide Password'
+//         });
+
+// });
+
+$("input[type=submit]").click(function(event){
+    var password = $("#myPassword").val();
+    var email = $('#myUsername').val();
+    // password  = password.replace(/./g, '*');
+
+    var myFirebaseRef = new Firebase("https://tigla.firebaseio.com/");
+
+        if(password.length <= 0 || email.length <= 0) {
+            alert('error in signup. try again');
+                    }
+    
+        if(password.length > 0) {
+    alert('you signed up. Thanks!');
+
+                        myFirebaseRef.set({
+                            title: email,
+                            author: password,
+                        });
+
+
+        }
+    });
+
+});
+
+</script>
+</body>
+</html>
